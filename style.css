@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #f8e8e8;
+}
+
+header {
+  height: 100vh;
+  background-image: url(https://www.w3schools.com/w3images/wedding_couple.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+header .married {
+  height: calc(100vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .content {
+  text-align: center;
+  color: white;
+}
+header .content h1 {
+  font-size: 70px;
+  font-weight: 300;
+}
+header .content p {
+  font-size: 30px;
+  margin: 20px 0;
+}
+header .content span {
+  font-size: 22px;
+  font-weight: bold;
+}
+header nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 15px 0;
+}
+header nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 20px;
+}
+header nav a:hover {
+  background: #ddd;
+  color: #000;
+}
+@media (max-width: 989px) {
+  header nav a {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+@media (max-width: 767px) {
+  header nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 425px) {
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  header nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  header nav nav {
+    position: static;
+  }
+  header nav nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 425px) {
+  header header .content h1 {
+    font-size: 30px;
+  }
+  header header .content p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    padding-bottom: 200px;
+  }
+}
+
+.about {
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
+  text-align: center;
+  background-color: #f8e8e8;
+}
+.about h2 {
+  font-size: 48px;
+  color: #666;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.about img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+.about i {
+  color: #777;
+  line-height: 1.8;
+  font-size: 18px;
+  text-align: center;
+}
+.about button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.about button:hover {
+  background: #ccc;
+  color: #000;
+}
+@media (max-width: 989px) {
+  .about button {
+    font-size: 16px;
+    padding: 13px 26px;
+  }
+}
+@media (max-width: 767px) {
+  .about button {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+}
+@media (max-width: 425px) {
+  .about button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+@media (max-width: 989px) {
+  .about h2 {
+    font-size: 40px;
+  }
+  .about p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .about h2 {
+    font-size: 34px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .about {
+    width: 95%;
+  }
+  .about h2 {
+    font-size: 28px;
+  }
+  .about p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.invitation {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://www.w3schools.com/w3images/flowers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.invitation .wedding {
+  color: #fff;
+}
+.invitation .wedding h2 {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.invitation .wedding p {
+  font-size: 28px;
+  font-weight: 300;
+}
+@media (max-width: 989px) {
+  .invitation .invitation .wedding h2 {
+    font-size: 55px;
+  }
+  .invitation .invitation .wedding p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .invitation .invitation .wedding h2 {
+    font-size: 42px;
+  }
+  .invitation .invitation .wedding p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .invitation .invitation {
+    min-height: 80vh;
+  }
+  .invitation .invitation .wedding {
+    width: 90%;
+  }
+  .invitation .invitation .wedding h2 {
+    font-size: 32px;
+  }
+  .invitation .invitation .wedding p {
+    font-size: 18px;
+  }
+}
+
+.wedding-details {
+  background: #f7eeee;
+  padding: 80px 20px;
+}
+.wedding-details .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wedding-details h2 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 300;
+  color: #555;
+  margin-bottom: 60px;
+}
+.wedding-details .wedding-image {
+  margin-bottom: 80px;
+}
+.wedding-details .wedding-image img {
+  width: 100%;
+  display: block;
+}
+.wedding-details .wedding-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+  text-align: center;
+}
+.wedding-details .wedding-info h3 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #555;
+}
+.wedding-details .wedding-info p {
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.rsvp {
+  background: #fceeee;
+  padding: 120px 20px;
+  text-align: center;
+}
+.rsvp .rsvp-content h2 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  color: #444;
+  margin-bottom: 35px;
+}
+.rsvp .rsvp-content p {
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: #666;
+  margin-bottom: 50px;
+}
+.rsvp .rsvp-content button {
+  width: 220px;
+  height: 70px;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  background: #ef8b80;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.rsvp .rsvp-content button:hover {
+  background-color: rgba(85, 85, 85, 0.337254902);
+}
+@media (max-width: 989px) {
+  .rsvp .wedding-details h2 {
+    font-size: 42px;
+  }
+  .rsvp .wedding-details .wedding-info h3 {
+    font-size: 38px;
+  }
+  .rsvp .rsvp .rsvp-content h2 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .rsvp .wedding-details .wedding-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .rsvp .wedding-details h2 {
+    font-size: 36px;
+  }
+  .rsvp .rsvp .rsvp-content h2 {
+    font-size: 34px;
+    letter-spacing: 4px;
+  }
+  .rsvp .rsvp .rsvp-content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 425px) {
+  .rsvp .wedding-details {
+    padding: 50px 15px;
+  }
+  .rsvp .wedding-details h2 {
+    font-size: 28px;
+  }
+  .rsvp .wedding-details .wedding-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .rsvp .wedding-details .wedding-info h3 {
+    font-size: 30px;
+  }
+  .rsvp .wedding-details .wedding-info p {
+    font-size: 16px;
+  }
+  .rsvp .rsvp {
+    padding-bottom: 200px;
+  }
+  .rsvp .rsvp .rsvp-content h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  .rsvp .rsvp .rsvp-content p {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .rsvp .rsvp .rsvp-content button {
+    width: 160px;
+    height: 55px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,121 @@
+@import './mixin.scss';
+
+header{
+
+height: 100vh;
+background-image: url(https://www.w3schools.com/w3images/wedding_couple.jpg);
+background-size: cover;
+background-position: center;
+position: relative;
+
+
+.married {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+
+    h1 {
+        font-size: 70px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    span {
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,.95);
+    z-index: 1000;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 15px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #666;
+        font-size: 18px;
+        transition: .3s;
+        padding: 10px 20px;
+
+        &:hover {
+            background: #ddd;
+            color: #000;
+        }
+    }
+
+    @include tablet {
+        a {
+            font-size: 16px;
+            padding: 8px 15px;
+        }
+    }
+
+    @include tabletmini {
+        a {
+            font-size: 14px;
+            padding: 8px 10px;
+        }
+    }
+
+    @include mobile {
+        ul {
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @include mobile {
+  nav {
+    position: static;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+}
+@include mobile {
+  header {
+    .content {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+}
+}
